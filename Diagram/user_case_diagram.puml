@@ -1,0 +1,35 @@
+@startuml
+actor User as "User"
+
+rectangle "Video Chat Application" {
+
+    rectangle "User Management" {
+        
+        usecase Register as "Register"
+        usecase Login as "Login"
+        usecase Logout as "Logout"
+        
+    }
+
+    rectangle "Video Chat" {
+        usecase StartVideoCall as "Start Video Call"
+        usecase EndVideoCall as "End Video Call"
+        usecase JoinVideoCall as "Join Video Call"
+        usecase ViewParticipants as "View Participants"
+        usecase Userisbusy as "UserisBusy"
+    }
+
+
+}
+User --> Register
+User --> Login
+User --> Logout
+
+User --> StartVideoCall
+User --> EndVideoCall
+User --> JoinVideoCall
+User --> ViewParticipants
+User --> UserisBusy
+
+
+@enduml
