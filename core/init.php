@@ -6,5 +6,5 @@
 
     $userObj = new \MyApp\User;
 
-    define('BASE_URL', 'http://localhost/Live_Chat_App/');
+    define('BASE_URL', 'http://localhost/VChat/');
     ?>

@@ -2,7 +2,7 @@
 include 'core/init.php';
 if($userObj->isLoggedIn())
 {
-   $userObj->redirect('home.php');
+    $userObj->redirect('home.php');
 }
 if($_SERVER['REQUEST_METHOD'] === "POST")
 {
@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST")
         }
         else
         {  //display error
-            $error = "Enter your login creditentials.";
+            $error = "Mothershot enter your shit to login.";
         }
     }
 }
